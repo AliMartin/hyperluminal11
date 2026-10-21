@@ -1,0 +1,15 @@
+uuid: 2faf6284-b5c9-45b6-acb9-2dbe70b20a26
+langcode: en
+status: true
+dependencies: {  }
+name: portfolio_small
+label: 'Portfolio small'
+effects:
+  15bf03ef-523c-4622-9aed-8ddacef81fc1:
+    uuid: 15bf03ef-523c-4622-9aed-8ddacef81fc1
+    id: image_scale
+    weight: 1
+    data:
+      width: 768
+      height: null
+      upscale: false

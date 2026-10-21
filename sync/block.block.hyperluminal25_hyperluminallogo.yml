@@ -1,0 +1,25 @@
+uuid: d7bc3750-4146-4ff5-a987-e2f7edb0310c
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:2eba5d85-0b7e-461e-82af-967cb92ad679'
+  module:
+    - block_content
+  theme:
+    - hyperluminal25
+id: hyperluminal25_hyperluminallogo
+theme: hyperluminal25
+region: content
+weight: -6
+provider: null
+plugin: 'block_content:2eba5d85-0b7e-461e-82af-967cb92ad679'
+settings:
+  id: 'block_content:2eba5d85-0b7e-461e-82af-967cb92ad679'
+  label: 'Hyperluminal logo'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

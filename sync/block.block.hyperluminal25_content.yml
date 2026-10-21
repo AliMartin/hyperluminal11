@@ -1,0 +1,22 @@
+uuid: a6532e00-ab7f-404e-a85e-961b37459742
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - hyperluminal25
+_core:
+  default_config_hash: AstHnYiwp_8mOSQZH6B9Y_Ot0-jzyc2NMsrYrI6lgaI
+id: hyperluminal25_content
+theme: hyperluminal25
+region: content
+weight: 1
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

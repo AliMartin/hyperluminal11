@@ -1,0 +1,17 @@
+uuid: b90e853e-02f3-4ef5-91fd-fdc2f274b582
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Project
+type: project
+description: 'Add a <em>project</em> to the website.'
+help: null
+new_revision: false
+preview_mode: 0
+display_submitted: false

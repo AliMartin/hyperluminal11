@@ -1,0 +1,15 @@
+_core:
+  default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
+langcode: en
+uuid: 546781d6-93d4-4b15-a2a4-56161b2a88ff
+name: Hyperluminal
+mail: noreply@hyperluminal.co.uk
+slogan: ''
+page:
+  403: /home
+  404: /home
+  front: /home
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en
+mail_notification: null

@@ -1,0 +1,25 @@
+uuid: e138cc24-b9f0-41ed-9541-79cc91ac5485
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:e9bb41ea-6676-4333-b71a-da4658b2dd0a'
+  module:
+    - block_content
+  theme:
+    - hyperluminal25
+id: hyperluminal25_copyright
+theme: hyperluminal25
+region: content
+weight: 3
+provider: null
+plugin: 'block_content:e9bb41ea-6676-4333-b71a-da4658b2dd0a'
+settings:
+  id: 'block_content:e9bb41ea-6676-4333-b71a-da4658b2dd0a'
+  label: Copyright
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

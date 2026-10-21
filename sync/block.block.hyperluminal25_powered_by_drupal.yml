@@ -1,0 +1,22 @@
+uuid: 3d9c79bc-88b9-4584-ac0a-f4c8c648aa37
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - hyperluminal25
+_core:
+  default_config_hash: CDO5xvS0u2elq8Au_4uiVKr9J_bRwR2cOETfwZfFKUk
+id: hyperluminal25_powered_by_drupal
+theme: hyperluminal25
+region: footer
+weight: 0
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

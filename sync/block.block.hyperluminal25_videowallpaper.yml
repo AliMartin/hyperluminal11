@@ -1,0 +1,25 @@
+uuid: 691b6cc0-358f-41b7-a8a6-502c4b41605f
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:2c2096e5-226d-4751-8554-b7ba3b4373d7'
+  module:
+    - block_content
+  theme:
+    - hyperluminal25
+id: hyperluminal25_videowallpaper
+theme: hyperluminal25
+region: content
+weight: -5
+provider: null
+plugin: 'block_content:2c2096e5-226d-4751-8554-b7ba3b4373d7'
+settings:
+  id: 'block_content:2c2096e5-226d-4751-8554-b7ba3b4373d7'
+  label: 'Video wallpaper'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

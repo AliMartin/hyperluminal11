@@ -1,0 +1,15 @@
+uuid: b0e6aaae-b33e-4268-a4bc-689643e026f8
+langcode: en
+status: true
+dependencies: {  }
+name: portfolio_large
+label: 'Portfolio large'
+effects:
+  b9d609af-5571-4b6b-bfe3-8c57beac44b6:
+    uuid: b9d609af-5571-4b6b-bfe3-8c57beac44b6
+    id: image_scale
+    weight: 1
+    data:
+      width: 1400
+      height: null
+      upscale: false

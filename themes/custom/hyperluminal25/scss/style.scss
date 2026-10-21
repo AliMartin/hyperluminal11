@@ -1,0 +1,18 @@
+// Sub theme styling.
+@import 'variables_drupal';
+
+// Bootstrap overridden variables.
+// @see https://getbootstrap.com/docs/5.2/customize/sass/#variable-defaults.
+@import 'variables_bootstrap';
+
+// Include bootstrap.
+@import '../../../../themes/contrib/bootstrap5/scss/style';
+
+// Plus Jakarta Sans font
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+@import 'links';
+@import 'views';
+@import 'node';
+@import 'video';
+@import 'webform';

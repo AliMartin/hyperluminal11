@@ -1,0 +1,9 @@
+uuid: 85add5a3-8543-4aa2-a950-48a316acdfb9
+langcode: en
+status: true
+dependencies: {  }
+name: 'Client type'
+vid: client_type
+description: null
+weight: 0
+new_revision: false

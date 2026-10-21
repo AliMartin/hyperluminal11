@@ -1,0 +1,13 @@
+uuid: 4c9492bb-2c05-4b5b-ad5c-d953b28294a4
+langcode: en
+status: true
+dependencies:
+  module:
+    - webform
+_core:
+  default_config_hash: aqi5Ftlnhe9KyOowpK7CanEvJMBBo8xAR1dA99bKOuc
+id: webform_unarchive_action
+label: 'Restore webform'
+type: webform
+plugin: webform_unarchive_action
+configuration: {  }

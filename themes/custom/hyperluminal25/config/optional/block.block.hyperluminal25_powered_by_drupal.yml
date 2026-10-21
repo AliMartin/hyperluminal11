@@ -1,0 +1,19 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - hyperluminal25
+id: hyperluminal25_powered_by_drupal
+theme: hyperluminal25
+region: footer
+weight: 0
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

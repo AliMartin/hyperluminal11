@@ -1,0 +1,25 @@
+.views-row .views-field-field-link a,
+#block-hyperluminal25-contact .field--name-body a {
+  display: block;
+  max-width: 100px;
+  margin: 0 auto;
+  text-decoration: none;
+  color: $white;
+  text-transform: uppercase;
+  padding: 8px 12px;
+  border: 1px solid $white;
+  border-radius: 20px;
+  font-size: 16px;
+  line-height: 1;
+  text-align: center;
+
+  &:hover,
+  &:focus {
+    background-color: $white;
+    color: $black;
+  }
+}
+
+#block-hyperluminal25-contact .field--name-body a {
+  max-width: 180px;
+}

@@ -1,0 +1,27 @@
+uuid: 76d71801-8fe6-43e2-aada-0e3286211ecd
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - hyperluminal25
+_core:
+  default_config_hash: qPWta_w4uFSW_SwVqUMCxnfdHlG_TNUC0FZ1IUJ7_d0
+id: hyperluminal25_main_navigation
+theme: hyperluminal25
+region: nav_main
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: true
+visibility: {  }
