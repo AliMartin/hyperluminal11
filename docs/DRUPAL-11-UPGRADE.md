@@ -144,3 +144,11 @@ Composer's scaffold operation initially replaced the project README with Drupal'
 Drupal initially showed a cached unsupported-contributed-release status. Refreshed its project and release metadata; every installed contributed project now reports the current recommended stable release, including Responsive Favicons 4.0.0. This supersedes the earlier note about missing release data. No form submissions or production changes were made.
 
 Release reference: [Responsive Favicons 4.0.0](https://www.drupal.org/project/responsive_favicons/releases/4.0.0).
+
+## Follow-up: uninstall deprecated History module
+
+On 21 October 2026, backed up the local database and ran `ddev drush pm:uninstall history -y`, then exported configuration and rebuilt caches. History is removed from `sync/core.extension.yml`, and its active database table has been removed by Drupal's uninstaller. The existing legacy `dr9d_` tables were not changed. History's per-user content-read tracking is no longer available; site content was not removed.
+
+History is bundled with `drupal/core`, not installed as a separate Composer package. Its inactive source directory remains managed by the core package; manually deleting it would be undone by a future Composer installation and would modify the distributed core tree.
+
+Verified that History is not enabled, active and exported configuration match, error-level requirements are clear, and `/` and `/contact` return HTTP 200. The database checkpoint is retained at `.ddev/backups/drupal11-upgrade-20261021/before-history-uninstall.sql.gz`. This supersedes the earlier note about retaining History and its deprecation warning. Production was not changed.
