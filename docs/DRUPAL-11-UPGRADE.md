@@ -9,6 +9,7 @@ Completed locally on 21 October 2026. This records the implementation of apprais
 | Drupal core and four core Composer packages | 10.6.10 | 11.4.11 |
 | Intermediate Drupal 10 checkpoint | — | 10.6.20 |
 | Webform | 6.2.10 | 6.3.1 |
+| Responsive Favicons (follow-up below) | 3.0.1 | 4.0.0 |
 | Backup and Migrate | 5.1.4 | 5.1.5 |
 | Drush | 13.7.3 | 13.8.0 |
 | Local PHP | 8.3.30 | 8.4.18 |
@@ -129,3 +130,17 @@ Before production rollout, verify PHP 8.4 and required extensions, database comp
 Complete staging/production regression work from appraisal step 6: visual/mobile review, administrator/editor workflows, actual contact submissions with captured mail, Honeypot, redirects/error pages, cron and backup/restore. No production access, browser visual QA, form submission, email send or deployment was performed in this task.
 
 References: [official Drupal 10-to-11 upgrade guide](https://www.drupal.org/docs/upgrading-drupal/upgrading-drupal/how-to-upgrade-from-drupal-10-to-drupal-11), [Webform 6.3.1](https://www.drupal.org/project/webform/releases/6.3.1), [DDEV customisation](https://docs.ddev.com/en/stable/users/extend/customization-extendibility/).
+
+## Follow-up: Responsive Favicons 4.0.0
+
+Updated on 21 October 2026 at the user's request. Changed the Composer requirement from `^3.0` to stable `^4.0` and updated the lock file from 3.0.1 to 4.0.0. No other package versions changed. Version 3 was Drupal 11 compatible; version 4 is the newer stable release and refactors favicon handling into a service. The available 4.1 beta was not selected.
+
+Saved a database checkpoint as `.ddev/backups/drupal11-upgrade-20261021/before-favicons4.sql.gz`. Ran database updates (none pending), rebuilt caches, and exported configuration. The module's existing path and five configured tags were preserved; the export remains identical to active configuration.
+
+The new `responsive_favicons.manager` service reports five links and no missing files. Both `/` and `/contact` render exactly the expected PNG, SVG, ICO, Apple touch icon and web-manifest links; all linked files return HTTP 200. Composer's audit and strict manifest/lock validation pass.
+
+Composer's scaffold operation initially replaced the project README with Drupal's generic README. Restored the project README and added `[web-root]/README.md: false` to the scaffold file mapping to preserve it on subsequent installations. Refreshed lock metadata without further dependency changes.
+
+Drupal initially showed a cached unsupported-contributed-release status. Refreshed its project and release metadata; every installed contributed project now reports the current recommended stable release, including Responsive Favicons 4.0.0. This supersedes the earlier note about missing release data. No form submissions or production changes were made.
+
+Release reference: [Responsive Favicons 4.0.0](https://www.drupal.org/project/responsive_favicons/releases/4.0.0).

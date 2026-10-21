@@ -26,7 +26,7 @@
         "drupal/core-vendor-hardening": "^11.4",
         "drupal/honeypot": "^2.1 | ^2.2",
         "drupal/httpswww": "^2.1",
-        "drupal/responsive_favicons": "^3.0",
+        "drupal/responsive_favicons": "^4.0",
         "drupal/webform": "^6.3",
         "drush/drush": "^13.7"
     },
@@ -56,7 +56,8 @@
             "file-mapping": {
                 "[web-root]/.htaccess": {
                     "prepend": "assets/scaffold/protected-paths.htaccess"
-                }
+                },
+                "[web-root]/README.md": false
             }
         },
         "installer-paths": {
