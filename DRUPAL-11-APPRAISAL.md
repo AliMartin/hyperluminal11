@@ -1,5 +1,7 @@
 # Hyperluminal Drupal 11 appraisal
 
+Historical assessment: steps 1–5 were subsequently implemented locally. See [the Drupal 11 upgrade record](docs/DRUPAL-11-UPGRADE.md) for the final state and verification.
+
 Assessed 21 October 2026. Scope: local working tree, Composer metadata, running DDEV environment, local database, and HTTP responses. No application code, dependencies, settings, or database updates were changed. Existing working-tree changes were preserved. Read-only Drupal requests can populate normal caches.
 
 ## Assessment

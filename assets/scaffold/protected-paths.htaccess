@@ -1,0 +1,7 @@
+# Project protection prepended by drupal/core-composer-scaffold.
+# Keep these rules before Drupal's front-controller rewrites.
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteRule ^(?:private-files|tmp|sync|vendor|scripts|docs|deployment|assets/scaffold)(?:/|$) - [F,L,NC]
+  RewriteRule ^(?:DRUPAL-11-APPRAISAL\.md|README\.md)$ - [F,L,NC]
+</IfModule>

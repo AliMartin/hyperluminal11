@@ -1,3 +1,25 @@
+# Hyperluminal
+
+Drupal 11.4 website using the custom Hyperluminal25 Bootstrap subtheme. Local development uses DDEV, PHP 8.4 and MariaDB 11.8.
+
+See [the upgrade record](docs/DRUPAL-11-UPGRADE.md) for changes, validation, backups, recovery notes and production handover requirements. The [original appraisal](DRUPAL-11-APPRAISAL.md) records the state before the upgrade.
+
+For an existing local copy:
+
+```sh
+ddev start
+ddev composer install
+ddev drush status
+```
+
+A fresh checkout also needs the site's database, public/private files and environment-specific settings; these are deliberately excluded from Git. After Composer creates core, restart DDEV so it can generate local settings, then restore the site's database/files. Do not install a new empty Drupal site as a substitute for restoring Hyperluminal's content.
+
+Configuration is exported into `/sync`; web access to it is denied. Use `ddev drush config:status` to review differences and `ddev drush config:export -y` to export intended active changes. Database credentials and hash salts belong in ignored settings/environment configuration, not in tracked `settings.local.php`.
+
+The cPanel recipe copies code only. Follow the production handover notes for database/configuration updates and staging checks before any deployment.
+
+---
+
 <img alt="Drupal Logo" src="https://www.drupal.org/files/Wordmark_blue_RGB.png" height="60px">
 
 Drupal is an open source content management platform supporting a variety of

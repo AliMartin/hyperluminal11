@@ -1,0 +1,24 @@
+# Preserve target-specific settings and uploaded/private content.
+/.git/
+/.ddev/
+/.cpanel.yml
+/.DS_Store
+/.env
+/.env.*
+/sites/*/*settings*.php
+/sites/*/*services*.yml
+/sites/*/files/
+/sites/*/private/
+/sites/*/public/
+/private-files/
+/tmp/
+/sync/
+/docs/
+/deployment/
+/DRUPAL-11-APPRAISAL.md
+/README.md
+*.sql
+*.sql.gz
+*.mysql
+*.mysql.gz
+*.mysql.gz.info

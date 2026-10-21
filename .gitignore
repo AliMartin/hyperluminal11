@@ -77,3 +77,6 @@
 .env
 .env.*
 !.env.example
+/autoload_runtime.php
+/recipes/README.txt
+/recipes/.gitignore
