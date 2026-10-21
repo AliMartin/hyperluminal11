@@ -2,5 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/hyperlum/public_html
-    - composer install --no-dev --prefer-dist --no-interaction --optimize-autoloader
-    - /usr/bin/rsync -a --exclude-from=deployment/rsync-excludes.txt ./ "$DEPLOYPATH/"
+    - /bin/cp -r * $DEPLOYPATH
